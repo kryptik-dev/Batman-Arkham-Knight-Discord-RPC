@@ -39,7 +39,7 @@ By default, the launcher uses a hardcoded path to Batman: Arkham Knight. To use 
 ### 2. Discord Client ID
 This launcher uses a Discord Client ID for Rich Presence. You can use the provided client ID in the code:
 
-- **Client ID:** `YOUR_CLIENT_ID_HERE`
+- **Client ID:** 1395414403599302770
 
 If you want to use your own, register an application at the [Discord Developer Portal](https://discord.com/developers/applications) and replace the client ID in `batman-rpc.js`.
 
