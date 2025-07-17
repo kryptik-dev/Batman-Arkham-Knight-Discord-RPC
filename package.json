@@ -1,0 +1,34 @@
+{
+  "name": "batman-arkham-knight-launcher",
+  "version": "1.0.0",
+  "description": "Silent background launcher for Batman Arkham Knight with Discord RPC.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.yourdomain.batmanarkhamknight",
+    "productName": "Batman Arkham Knight Launcher",
+    "files": [
+      "*"
+    ],
+    "extraResources": [
+      "launch-batman-silent.vbs",
+      "launch-batman.bat",
+      "batman-rpc.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    }
+  },
+  "author": "кяуρтιк"
+}
