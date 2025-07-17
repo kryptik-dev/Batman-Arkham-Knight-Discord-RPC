@@ -6,10 +6,13 @@ This project is a custom launcher for Batman: Arkham Knight that integrates with
 - Launches Batman: Arkham Knight with Discord Rich Presence
 - Silent background launching
 - Customizable game path
+- All in one .exe file
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/) (v14 or higher recommended)
 - npm (comes with Node.js)
+- Electron
+- discord-rpc (npm package)
 
 ## Setup & Build
 1. **Clone or download this repository.**
@@ -17,8 +20,10 @@ This project is a custom launcher for Batman: Arkham Knight that integrates with
    ```sh
    npm install
    ```
-3. **Build (if you have a build step):**
-   If you use a bundler or transpiler, run the appropriate build command. Otherwise, you can use the provided scripts as-is.
+3. **Build:**
+    ```sh
+   npm run dist
+   ```
 
 ## Configuration
 
@@ -40,7 +45,7 @@ If you want to use your own, register an application at the [Discord Developer P
 
 ## Usage
 - Run `launch-batman-silent.vbs` to silently launch the game with Discord RPC.
-- Or, run `main.js` directly if you want to launch via Node.js and see console output.
+- Or, install the setup exe from the dist directory
 
 ## Files
 - `batman-rpc.js` – Handles Discord Rich Presence
